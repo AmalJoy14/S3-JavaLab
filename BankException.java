@@ -79,10 +79,16 @@ public class BankException {
                     // Search for a customer by account number
                     System.out.println("Enter the account number");
                     int searchAccount = sc.nextInt();
+                    boolean accountFound = false;
                     for (int i = 0; i < noOfCustomers; i++) {
                         if (customer[i].accountNumber == searchAccount) {
                             customer[i].getCustomerDetails();
+                            accountFound=true;
+                            break;
                         }
+                    }
+                    if(accountFound==false) {
+                    	System.out.println("Account not found\n");
                     }
                     break;
                 case 3: // Deposit Amount
