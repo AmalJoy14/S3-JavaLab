@@ -6,7 +6,6 @@
 * Date        :   29-09-2023
 ***************************************************************/
 
-
 import java.util.Scanner;
 public class FrequencyCount {
 	public static void main(String[] args) {
