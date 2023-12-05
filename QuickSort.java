@@ -8,7 +8,7 @@ public class QuickSort{
     }
 
     public static int partition(String[] arr, int low, int high) {
-        String pivot = arr[low]; // Select the first element as the pivot
+        String pivot = arr[low]; 
         int i = low;
         for (int j = low + 1; j <= high; j++) {
             if (arr[j].compareTo(pivot) < 0) {
@@ -16,7 +16,7 @@ public class QuickSort{
                 swap(arr, i, j);
             }
         }
-        swap(arr, low, i); // Swap the pivot with the element at i
+        swap(arr, low, i); 
         return i;
     }
 
@@ -32,7 +32,7 @@ public class QuickSort{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the limit: ");
         int limit = sc.nextInt();
-        sc.nextLine(); // Consume the newline character
+        sc.nextLine(); 
 
         String[] strings = new String[limit];
         System.out.println("Enter the strings to be sorted:");
